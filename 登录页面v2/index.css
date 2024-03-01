@@ -1,0 +1,72 @@
+/* 选择器越来越精确，优先级越来越高 */
+*{
+    /* 清除所有元素的内外边距 */
+    padding: 0;
+    margin: 0;
+    /* 怪异盒子模型 默认的box-sizing是content-box，它设置的width是只有neiron，它设置的width
+    只有content，总体的盒子的大小还要加上padding and border，就是还要经过计算才能得到总的
+    box大小，但是border-box设置的是总体的盒子width，width里面包含了padding and border。*/
+    box-sizing: border-box;
+
+}
+
+body{
+/* 弹性布局 使元素水平+垂直居中 */
+    display:flex;
+    /* 我们想让所有元素先跑到浏览器中央去 */
+    /* justify-content是元素在主轴方向的对齐方式，即让所有元素水平居中 */
+    justify-content: center;
+    /* align-items是元素按照交叉轴的对齐方式，即让所有元素垂直居中 */
+    align-items: center;
+    /* 但仅仅只有这俩个的话是做不到让他处于整个页面的中央的.首先body,body的高是 */
+    height: 100vh;
+
+    background: linear-gradient(#203355,#3c6593) ;
+
+}
+
+
+/* 
+.login h2{
+
+    color: #fff;
+    margin-bottom: 35px;
+
+}
+
+.login .login_box{
+
+    position: relative;
+    width: 100%;
+}
+
+.login .login_box input{
+    outline: none;
+    border:none;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 16px;
+    border-bottom:1px solid #fff;
+    background-color: transparent;
+}
+
+.login .login_box label{
+
+    position: absolute;
+    top:0;
+    left: 0;
+    padding:10px 0;
+    color: #fff;
+    pointer-events: none;
+    transition: all 0.5s;
+
+}
+
+.login .login_box input:focus+label{
+
+    top: -20px;
+    color: #03e9f4;
+    font-size: 8x;
+} */

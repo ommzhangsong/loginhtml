@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <!-- 引入css文件 -->
+
+    <link rel="stylesheet" href="index.css">
+
+
+
+    
+</head>
+<body>
+    
+    <div class="login">
+
+        <h2>用户登录</h2>
+
+        <div class="login_box">
+            <!-- required 是html5中的iput新属性，代表必须填写的表单字段 -->
+            <input type="text" required="required">
+            <label>用户名</label>
+        </div>
+
+        <div class="login_box">
+            <input type="password" required="required">
+            <label>密码</label>
+        </div>
+    
+    
+    <a href="javascript:void(0)">  
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>      
+    </a>
+    </div>
+</body>
+</html>
+.login
+{
+    /* 让子元素变为弹性项目 */
+    display: flex;
+    /* 改变主轴方向,让其变成竖向,就是向下,即列项排列 */
+    flex-direction: column;
+        /* 让项目在交叉轴方向居中,因为交叉轴与主轴垂直,所以向右*/
+    align-items: center;
+    width: 400px;
+    padding: 40px;
+    background-color: rgba(0,0,0,0.2);
+
+}

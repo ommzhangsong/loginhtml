@@ -1,0 +1,72 @@
+html{height: 100%;}body{
+/* 若body没有占满整个背景，可能是其他的代码块修改了，我们可以用height：100vh,
+或者html，和body都设置一下height 。这里扩展一下单位vh，vh是相对于视窗的高度，也就
+无论元素中是否有内容都会被撑满视窗*/
+    height: 100%;
+/* 注意背景色渐变色的设计不是background-color,而是background，或者background-image */
+    background:linear-gradient(to left,rgb(240, 108, 130),rgb(231, 142, 142));
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+
+}
+
+.img_login{
+top:215px;
+width: 750px;
+height: 420px;
+display: flex;
+position: relative;
+box-shadow:0px 1px 5px black;
+
+
+}
+.img_login .image{
+height: 420px;
+width:500px;
+background-image:url(image.png);
+/* 图片适应大小 */
+background-size: cover;
+}
+
+.login_box{
+/* 注意使用弹性布局的时候，居中对齐都是对子元素的控制，所以我们不能直接给子元素设置
+弹性布局，而是给它外面的box设置 */
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+position: static;
+width: 250px;
+}
+h1{
+padding-left: 80px;
+padding-bottom: 0px;
+
+}
+.username,.pwd{
+    outline: none;
+    border: 0;
+    
+    position: relative;
+    left: 35px;
+    border-bottom:1px solid  ;
+    font-size: 15px;
+
+}
+
+.button{
+    border: 0;
+    text-decoration: none;
+    background:linear-gradient(to left,rgb(240, 108, 130),rgb(231, 142, 142));
+
+    position: relative;
+    left:80px;
+    top:45px;
+    flex-shrink: 0;
+    border-radius: 64px;
+    width: 100px;
+    height: 50px;
+    font-size: 13px;
+
+}
